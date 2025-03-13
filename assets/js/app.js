@@ -484,7 +484,7 @@ function setBet(e, n, t, o){
 		}
 
 		if(!e.querySelector('.chip')){
-			let chipColour = (wager < 5)? 'red' : ((wager < 10)? 'blue' : ((wager < 100)? 'orange' : 'gold'));
+			let chipColour = (wager < 100)? 'red' : ((wager < 250)? 'blue' : ((wager < 1000)? 'orange' : 'gold'));
 			let chip = document.createElement('div');
 			chip.setAttribute('class', 'chip ' + chipColour);
 			let chipSpan = document.createElement('span');
